@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moonarie — Support</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
+
+  :root{
+    --bg: #fdf1f6;
+    --bg-soft: #fff8fb;
+    --ink: #2b1e2e;
+    --ink-soft: #6e5a6c;
+    --rose: #e0568c;
+    --violet: #8a5ecb;
+    --line: #f1d9e6;
+    --card: #ffffff;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html, body{
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body{
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+
+  .wrap{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+
+  .moon{
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 28px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 32% 30%, #ffe3ef 0%, var(--rose) 55%, var(--violet) 100%);
+    box-shadow: 0 10px 30px rgba(224, 86, 140, 0.25);
+  }
+
+  h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
+    line-height: 1.05;
+    text-align: center;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+
+  .tagline{
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+    margin: 0 0 56px;
+    max-width: 46ch;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.55;
+  }
+
+  .contact-card{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 32px 28px;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .contact-card p{
+    margin: 0 0 14px;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+  }
+
+  .contact-card a.email{
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--rose);
+    text-decoration: none;
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 3px;
+    transition: border-color 0.2s ease;
+    word-break: break-word;
+  }
+
+  .contact-card a.email:hover{
+    border-color: var(--rose);
+  }
+
+  .response-note{
+    margin-top: 18px;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    opacity: 0.8;
+  }
+
+  h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0 0 24px;
+  }
+
+  .faq{
+    margin-bottom: 48px;
+  }
+
+  .faq-item{
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+  }
+
+  .faq-item:first-of-type{
+    border-top: 1px solid var(--line);
+  }
+
+  .faq-q{
+    font-weight: 600;
+    font-size: 1.02rem;
+    margin: 0 0 8px;
+    color: var(--ink);
+  }
+
+  .faq-a{
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 0.96rem;
+    line-height: 1.6;
+  }
+
+  footer{
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+
+  footer p{
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    margin: 0 0 10px;
+  }
+
+  footer a{
+    color: var(--ink-soft);
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #1c1420;
+      --bg-soft: #241a29;
+      --ink: #f4e9f0;
+      --ink-soft: #b8a2b6;
+      --line: #3a2a3d;
+      --card: #251b29;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #1c1420;
+    --bg-soft: #241a29;
+    --ink: #f4e9f0;
+    --ink-soft: #b8a2b6;
+    --line: #3a2a3d;
+    --card: #251b29;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="moon"></div>
+    <h1>Moonarie Support</h1>
+    <p class="tagline">A simple cycle tracker — and simple, direct support to match. No ticket systems, no bots. Just write to us.</p>
+
+    <div class="contact-card">
+      <p>For questions, bug reports, or feedback, email us directly:</p>
+      <a class="email" href="mailto:masenko.nikolai.aleksandrovich@gmail.com">masenko.nikolai.aleksandrovich@gmail.com</a>
+      <p class="response-note">We aim to reply within 1–2 business days.</p>
+    </div>
+
+    <h2>Common questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <p class="faq-q">How do I log a period day?</p>
+        <p class="faq-a">Open the Calendar tab, tap on the date, and choose "Log Period." You can also add notes about your physical condition and activity for that day.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Can I edit multiple days at once?</p>
+        <p class="faq-a">Yes — in the Calendar tab, tap the edit icon to enter Editing Mode, then tap each date you want to mark or unmark, and hit Save.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How is my cycle length calculated?</p>
+        <p class="faq-a">You can set your average cycle and period length manually in Settings. Moonarie uses these values to predict your next period and fertile window.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Is my data private?</p>
+        <p class="faq-a">Yes. Your cycle data stays on your device and is never sold or shared. See our Privacy Policy for full details.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How do I turn on reminders?</p>
+        <p class="faq-a">Go to Settings → Notifications, and enable Period, Delay, or Ovulation reminders individually. Nothing is turned on by default.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Moonarie — a cycle calendar without the clutter.</p>
+      <p><a href="#">Privacy Policy</a></p>
+    </footer>
+  </div>
+</body>
+</html>
